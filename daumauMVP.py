@@ -105,6 +105,7 @@ lineDau1, = ax.plot(df_plot['preds_dau'], label="DAU Competitor")
 plt.fill_between(df_plot.index,df_plot['limit inf'],df_plot['limit sup'], color='b', alpha=.1)
 lineDau2, = ax.plot(df_plot['DAU Real'], label="DAU Cliente")
 ax.legend(handler_map={lineDau1: HandlerLine2D(numpoints=8)})
+ax.set_ylim(ymin=0)
 plt.title('DAU REAL X DAU CONCORRENTE (Estimativa)')
 
 st.pyplot()
@@ -127,6 +128,7 @@ lineMau1, = ax.plot(df_plot_mau['preds_mau'], label="MAU Competitor")
 plt.fill_between(df_plot_mau.index,df_plot_mau['limit inf'],df_plot_mau['limit sup'], color='b', alpha=.1)
 lineMau2, = ax.plot(df_plot_mau['MAU Real'], label="MAU Cliente")
 ax.legend(handler_map={lineMau1: HandlerLine2D(numpoints=8)})
+ax.set_ylim(ymin=0)
 plt.title('MAU REAL X MAU CONCORRENTE (Estimativa)')
 
 st.pyplot()
@@ -149,6 +151,7 @@ lineStick1, = ax.plot(df_plot_stick['Stickiness Preds'], label="Stickiness Compe
 plt.fill_between(df_plot_stick.index,df_plot_stick['limit inf'],df_plot_stick['limit sup'], color='b', alpha=.1)
 lineStick2, = ax.plot(df_plot_stick['Stickiness Real'], label="Stickiness Cliente")
 ax.legend(handler_map={lineStick1: HandlerLine2D(numpoints=8)})
+ax.set_ylim(ymin=0)
 plt.title('Stickiness REAL X Stickiness CONCORRENTE (Estimativa)')
 
 st.pyplot()
