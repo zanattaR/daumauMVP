@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 from matplotlib.legend_handler import HandlerLine2D
@@ -18,7 +17,7 @@ st.write('''Esta aplicação tem como objetivo validar as visualizações das es
 
 # Carregando base de dados
 df = pd.read_csv('dau_mau_streamlit.csv', parse_dates=['DATE'])
-
+st.write(df)
 app_cliente = st.selectbox('Cliente',df['APP'].unique())
 app_competitor = st.selectbox('Concorrente',df['APP'].unique())
 
@@ -28,8 +27,8 @@ food_stick = 0.08
 health_dau = 0.15
 health_mau = 0.07
 health_stick = 0.15
-shopping_dau = 0.16
-shopping_mau = 0.13
+shopping_dau = 0.17
+shopping_mau = 0.14
 shopping_stick = 0.16
 finance_dau = 0.19
 finance_mau = 0.21
