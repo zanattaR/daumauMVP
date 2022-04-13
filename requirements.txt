@@ -2,3 +2,4 @@ streamlit==0.79.0
 pandas==1.2.3
 Pillow==6.2.0
 matplotlib==3.3.1
+click==8.0
