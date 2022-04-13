@@ -6,13 +6,13 @@ from matplotlib.legend_handler import HandlerLine2D
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Imagem
-img = Image.open('logo_daumau.png')
-st.image(img)
+#img = Image.open('logo_daumau.png')
+#st.image(img)
 
 # Título
 st.markdown('## Validação de estimativas para DAU/MAU/Stickiness - MVF')
 st.write("")
-st.write(''' Esta aplicação tem como objetivo validar as visualizações das estimativas de DAU, MAU e Stickiness que 
+st.write('''Esta aplicação tem como objetivo validar as visualizações das estimativas de DAU, MAU e Stickiness que 
 	comparam os dados reais e as estimativas com um determindado intervalo de confiança. ''')
 
 # Carregando base de dados
